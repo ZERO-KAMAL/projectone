@@ -34,12 +34,20 @@
             }
             .dropdown-menu {
                 background-color: $color-black;
+                li {
+                    margin-left: 0rem !important;
+                    a{
+                        text-transform: capitalize;
+                    }
+                }
             }
         }
     }
-    // @media screen and (max-width: 991px) {
-    //     background: $color-black;
-    // }
+    @media screen and (max-width: 991px) {
+        .navbar-nav {
+            background-color: $color-black;
+        }
+    }
     .navbar-toggler {
         background-color: $color-white !important;
     }
@@ -81,6 +89,7 @@
             justify-content: center;
             max-height: 95vh;
             height: 613px;
+            margin-top: 40px;
             .main-banner__title {
                 color: $color-white;
                 font-size: 48px;

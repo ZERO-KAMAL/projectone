@@ -165,6 +165,20 @@ ul {
   background-color: #13100d;
 }
 
+#header ul li.dropdown .dropdown-menu li {
+  margin-left: 0rem !important;
+}
+
+#header ul li.dropdown .dropdown-menu li a {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 991px) {
+  #header .navbar-nav {
+    background-color: #13100d;
+  }
+}
+
 #header .navbar-toggler {
   background-color: #ffffff !important;
 }
@@ -214,6 +228,7 @@ ul {
           justify-content: center;
   max-height: 95vh;
   height: 613px;
+  margin-top: 40px;
 }
 
 #main-banner .main-banner__inner .main-banner__content .main-banner__title {
