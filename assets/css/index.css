@@ -31,13 +31,22 @@ body {
   font-size: 20px;
   scroll-behavior: smooth;
   color: #13100d;
+  position: relative;
   background-color: #f9f7f2;
   font-weight: 300;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
 }
 
 p {
   margin-top: 1rem;
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -62,8 +71,8 @@ ul {
 
 @media (max-width: 640px) {
   .myContainer {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -96,6 +105,12 @@ ul {
   color: #b89535;
 }
 
+@media screen and (max-width: 480px) {
+  .section__title h2 {
+    font-size: 30px;
+  }
+}
+
 .text-gold {
   color: #b89535;
 }
@@ -106,7 +121,8 @@ ul {
 
 .bg-black {
   background-color: #13100d;
-  padding: 0.875rem 0 !important;
+  padding: 0.75rem 0 !important;
+  width: 100%;
 }
 
 #header {
@@ -114,6 +130,9 @@ ul {
   position: relative;
   padding: 40px 0px;
   width: 100%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
 }
 
 #header ul {
@@ -202,6 +221,14 @@ ul {
   font-size: 48px;
 }
 
+@media (max-width: 400px) {
+  #main-banner .main-banner__inner .main-banner__content .main-banner__title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 6px !important;
+  }
+}
+
 #main-banner .main-banner__inner .main-banner__content p {
   color: #ffffff;
 }
@@ -234,6 +261,7 @@ ul {
   margin-top: -40px;
   z-index: 2;
   position: relative;
+  overflow-x: hidden;
 }
 
 #intro .introContainer {
@@ -242,7 +270,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   #intro .introContainer {
-    padding-left: 30px;
+    padding-left: 0px;
   }
 }
 
@@ -262,10 +290,21 @@ ul {
   }
 }
 
+@media (max-width: 480px) {
+  #intro .intro-inner {
+    padding: 40px 0px;
+  }
+}
+
 #intro .intro-inner__bg {
   position: absolute;
+  left: 0%;
   bottom: 0%;
   z-index: -99;
+}
+
+#quote {
+  margin-top: 40px;
 }
 
 #quote .quote-content p {
@@ -344,6 +383,7 @@ ul {
 
 #divisions .divisions__inner .divisions__inner-content {
   z-index: 1;
+  overflow-x: hidden;
 }
 
 #divisions .divisions__inner .divisions__inner-content ul li {

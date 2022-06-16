@@ -6,6 +6,10 @@
     position: relative;
     padding: 40px 0px;
     width: 100%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    // overflow-x: hidden;
     ul {
         z-index: 99;
         li {
@@ -80,6 +84,11 @@
             .main-banner__title {
                 color: $color-white;
                 font-size: 48px;
+                @media (max-width: 400px) {
+                    font-size: 28px;
+                    line-height: 32px;
+                    letter-spacing: 6px !important;
+                }
             }
             p {
                 color: $color-white;
@@ -104,10 +113,11 @@
     margin-top: -40px;
     z-index: 2;
     position: relative;
+    overflow-x: hidden;
     .introContainer {
         padding-left: 60px;
         @media screen and (max-width: 768px) {
-            padding-left: 30px;
+            padding-left: 0px;
         }
     }
     .intro-inner {
@@ -121,9 +131,13 @@
             padding-top: 130px;
             padding-bottom: 130px;
         }
+        @media (max-width: 480px) {
+            padding: 40px 0px;
+        }
     }
     .intro-inner__bg {
         position: absolute;
+        left: 0%;
         bottom: 0%;
         z-index: -99;
     }
@@ -131,6 +145,7 @@
 
 //quote
 #quote {
+    margin-top: 40px;
     .quote-content {
         p {
             font-size: 28px;
@@ -189,6 +204,7 @@
         }
         .divisions__inner-content {
             z-index: 1;
+            overflow-x: hidden;
             // .row {
             //     margin-top: 80px;
             // }
