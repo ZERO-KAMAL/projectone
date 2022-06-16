@@ -316,6 +316,8 @@ ul {
   left: 0%;
   bottom: 0%;
   z-index: -99;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #quote {
