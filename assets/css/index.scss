@@ -33,11 +33,43 @@
                 }
             }
             .dropdown-menu {
-                background-color: $color-black;
+                background: #13100d 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 20px #00386533;
+                z-index: 1;
+                .navbrand-img {
+                    z-index: -1;
+                    position: absolute;
+                    top: 0%;
+                    right: 0%;
+                    width: 45%;
+                }
                 li {
                     margin-left: 0rem !important;
                     a {
                         text-transform: capitalize;
+                    }
+                }
+                @media screen and (min-width: 991px) {
+                    left: -50% !important;
+                    min-width: none;
+                    padding-left: 28px;
+                    padding-right: 28px;
+                    padding-top: 28px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    li {
+                        margin-bottom: 24px;
+                        a {
+                            font-size: 14px;
+                            padding: 0% !important;
+                            transition: all 0.3s ease-in-out;
+                            font-weight: 300;
+                            letter-spacing: 1px;
+                            &:hover {
+                                background-color: transparent !important;
+                                transform: translateX(3px);
+                            }
+                        }
                     }
                 }
             }
@@ -161,13 +193,15 @@
             font-size: 28px;
             line-height: 42px;
             font-weight: 400;
+            font-family: "brownreguler", sans-serif;
         }
         .quote-author {
             margin-top: 25px;
             .author-name {
                 line-height: 30px;
                 font-size: 22px;
-                font-weight: 500;
+                font-weight: 400;
+                font-family: "brownreguler", sans-serif;
             }
             @media (min-width: 768px) {
                 margin-top: 88px;
@@ -228,7 +262,8 @@
             ul {
                 li {
                     color: white;
-
+                    font-weight: 400;
+                    font-family: "brownreguler", sans-serif;
                     .item {
                         .item-icon {
                             // width: 100px;
@@ -262,6 +297,7 @@
     z-index: 99;
     .section__title {
         h2 {
+     
             @media screen and (min-width: 767px) {
                 width: 650px;
                 margin: auto;
@@ -477,6 +513,8 @@
                         font-size: 28px;
                         color: $color-black;
                         font-weight: 400;
+                        font-family: "brownreguler", sans-serif;
+                       
                     }
                 }
             }
