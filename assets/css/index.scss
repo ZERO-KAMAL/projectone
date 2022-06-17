@@ -269,7 +269,7 @@
         }
         p {
             margin-top: 20px !important;
-            @media screen and (min-width: 767px) {
+            @media screen and (min-width: 991px) {
                 width: 800px;
                 margin: auto;
                 margin-top: 40px !important;
@@ -332,6 +332,9 @@
             }
         }
     }
+    @media screen and (max-width: 767px) {
+        display: none !important;
+    }
 }
 //carasoul
 #myCarasoul {
@@ -392,7 +395,7 @@
                         width: 80px;
                         height: 80px;
                     }
-                    &::after{
+                    &::after {
                         bottom: 12%;
                     }
                 }

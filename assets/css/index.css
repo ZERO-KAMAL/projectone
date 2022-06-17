@@ -452,7 +452,7 @@ ul {
   margin-top: 20px !important;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 991px) {
   #approach .section__title p {
     width: 800px;
     margin: auto;
@@ -527,6 +527,12 @@ ul {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lines {
+    display: none !important;
   }
 }
 
