@@ -297,7 +297,6 @@
     z-index: 99;
     .section__title {
         h2 {
-     
             @media screen and (min-width: 767px) {
                 width: 650px;
                 margin: auto;
@@ -378,7 +377,10 @@
     .carasoulCircle {
         width: 100%;
         .tab__toggle.is-active {
-            background-color: #002b4e !important;
+            background: $linear-color;
+            &:hover {
+                background: $linear-color-one;
+            }
         }
         @media screen and (max-width: 991px) {
             .carasoulCircle-inner {
@@ -403,7 +405,7 @@
                     border-radius: 9999px;
                     border: 0px;
                     z-index: 40;
-                    cursor: default;
+                    cursor: pointer;
                     span {
                         color: $color-black;
                         font-size: 1rem;
@@ -514,7 +516,6 @@
                         color: $color-black;
                         font-weight: 400;
                         font-family: "brownreguler", sans-serif;
-                       
                     }
                 }
             }
