@@ -236,7 +236,7 @@ ul {
   font-size: 48px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   #main-banner .main-banner__inner .main-banner__content .main-banner__title {
     font-size: 28px;
     line-height: 32px;
@@ -354,6 +354,7 @@ ul {
 
 #divisions {
   position: relative;
+  z-index: 2;
 }
 
 #divisions .divisions__inner {
@@ -437,6 +438,7 @@ ul {
 
 #approach {
   margin-top: 80px;
+  z-index: 99;
 }
 
 @media screen and (min-width: 767px) {
@@ -526,5 +528,173 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+#myCarasoul {
+  z-index: -1;
+}
+
+#myCarasoul .carasoulCircle {
+  width: 100%;
+}
+
+#myCarasoul .carasoulCircle .tab__toggle.is-active {
+  background-color: #002b4e !important;
+}
+
+@media screen and (max-width: 991px) {
+  #myCarasoul .carasoulCircle .carasoulCircle-inner {
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner::after {
+    width: 100%;
+    height: 2px;
+    background-color: #bfbdb9;
+    position: absolute;
+    content: "";
+    left: 0%;
+    right: 0%;
+    bottom: 6%;
+    z-index: -1;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle {
+    width: 40px;
+    height: 40px;
+    background-color: #bfbdb9;
+    border-radius: 9999px;
+    border: 0px;
+    z-index: 40;
+    cursor: default;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle span {
+    color: #13100d;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #ffffff;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab2 {
+    position: absolute;
+    left: 33%;
+    bottom: 0%;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab3 {
+    position: absolute;
+    left: 60%;
+    bottom: 0%;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab4 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 600px) and (max-width: 991px) {
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle {
+    width: 80px;
+    height: 80px;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner::after {
+    bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #myCarasoul .carasoulCircle .content {
+    padding-top: 40px !important;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  #myCarasoul .carasoulCircle .carasoulCircle-inner {
+    width: 100%;
+    height: 1000px;
+    border-radius: 50%;
+    border: 1px solid #bfbdb9;
+    margin-top: -50%;
+    position: relative;
+    display: block !important;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .section__title {
+    position: absolute;
+    bottom: 14%;
+    width: 680px;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle {
+    width: 90px;
+    height: 90px;
+    background-color: #bfbdb9;
+    border-radius: 9999px;
+    border: 0px;
+    z-index: 40;
+    cursor: default;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle span {
+    color: #13100d;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #ffffff;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab1 {
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+    right: 0%;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab2 {
+    position: absolute;
+    bottom: -2%;
+    left: 35%;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab3 {
+    position: absolute;
+    bottom: -2%;
+    right: 35%;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .tab__toggle.tab4 {
+    position: absolute;
+    bottom: 8%;
+    right: 15%;
+  }
+}
+
+@media screen and (min-width: 991px) and (min-width: 991px) and (max-width: 1200px) {
+  #myCarasoul .carasoulCircle .carasoulCircle-inner {
+    height: 800px;
+  }
+  #myCarasoul .carasoulCircle .carasoulCircle-inner .section__title {
+    bottom: 20%;
+  }
+}
+
+#myCarasoul .carasoulCircle .content {
+  padding: 100px 0px;
+}
+
+#myCarasoul .carasoulCircle .content .tabs__content {
+  display: none;
+  opacity: 0;
+}
+
+#myCarasoul .carasoulCircle .content .tabs__content .item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#myCarasoul .carasoulCircle .content .tabs__content .item .item-title {
+  line-height: 38px;
+  font-size: 28px;
+  color: #13100d;
+  font-weight: 400;
+}
+
+#myCarasoul .carasoulCircle .content .tabs__content.is-active {
+  display: block !important;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
