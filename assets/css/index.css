@@ -6,10 +6,10 @@
 }
 
 @font-face {
-  font-family: "brownreguler";
-  font-weight: 400;
+  font-family: "Brownreguler";
+  font-weight: 300;
   font-style: normal;
-  src: url("/assets/font/BrownReguler.ttf") format("truetype");
+  src: url("/assets/font/Brownreguler.ttf") format("truetype");
 }
 
 * {
@@ -25,12 +25,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "brownreguler", sans-serif;
-  font-weight: 400;
+  font-family: "Brownreguler", sans-serif;
+  font-weight: 300;
 }
 
 body {
-  font-family: "Brown", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Brown", sans-serif;
   font-size: 20px;
   scroll-behavior: smooth;
   color: #13100d;
@@ -97,11 +97,10 @@ ul {
 }
 
 .section__title h2 {
-  letter-spacing: 7px;
+  letter-spacing: 0.2em;
   font-size: 40px;
   line-height: 56px;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .section__title h2 .text-gold {
@@ -113,6 +112,10 @@ ul {
     font-size: 30px;
     line-height: 46px;
   }
+}
+
+.section__title p {
+  line-height: 30px !important;
 }
 
 .text-gold {
@@ -361,6 +364,7 @@ ul {
   z-index: -99;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 65%;
 }
 
 #quote {
@@ -370,8 +374,7 @@ ul {
 #quote .quote-content p {
   font-size: 28px;
   line-height: 42px;
-  font-weight: 400;
-  font-family: "brownreguler", sans-serif;
+  font-family: "Brownreguler", sans-serif;
 }
 
 #quote .quote-content .quote-author {
@@ -381,8 +384,7 @@ ul {
 #quote .quote-content .quote-author .author-name {
   line-height: 30px;
   font-size: 22px;
-  font-weight: 400;
-  font-family: "brownreguler", sans-serif;
+  font-family: "Brownreguler", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -452,7 +454,7 @@ ul {
 #divisions .divisions__inner .divisions__inner-content ul li {
   color: white;
   font-weight: 400;
-  font-family: "brownreguler", sans-serif;
+  font-family: "Brownreguler", sans-serif;
 }
 
 #divisions .divisions__inner .divisions__inner-content ul li .item .item-icon {
@@ -471,9 +473,8 @@ ul {
 }
 
 #divisions .divisions__inner .divisions__inner-content ul li .item .item-content {
-  font-size: 18px;
+  font-size: 18px !important;
   text-transform: capitalize;
-  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -749,8 +750,7 @@ ul {
   line-height: 38px;
   font-size: 28px;
   color: #13100d;
-  font-weight: 400;
-  font-family: "brownreguler", sans-serif;
+  font-family: "Brownreguler", sans-serif;
 }
 
 #myCarasoul .carasoulCircle .content .tabs__content.is-active {
